@@ -1,17 +1,29 @@
+
+/*
+Reset 
+*/
+
 * {
     padding: 0;
     margin: 0;
 }
 
 :root {
-    /* Variables */
 
-    /* Typography */
+    /*
+    Variables
+    */
+
+    /*
+    Typography
+    */
     --f-barlow-c: 'Barlow Condensed', sans-serif;
     --f-barlow-n: 'Barlow', sans-serif;
     --f-bellefair: 'Bellefair', serif;
     
-    /* Colors */
+    /*
+    Colors
+    */
     --c-blue-dark: hsl(230, 35%, 7%);
     --c-blue-light: hsl(231, 77%, 90%);
     --c-white-normal: hsl(0, 0%, 100%);
@@ -21,8 +33,12 @@
     font-size: 62.5%;
 
 }
-/* Mobile version*/
-/* Headings and subheadings */
+
+/* 
+Mobile version* width-min: 375px
+/* 
+Headings and subheadings 
+*/
 
 h1, 
 h2, 
@@ -87,13 +103,17 @@ h4 {
     color: var(--c-blue-light);
 }
 
-/* Body */
+/*
+Body
+*/
 
 body {
+    width: 100vw;
     font-family: var(--f-barlow-n);
     font-size: 1.5rem;    
     line-height: 2.5rem;
     color: var(--c-blue-light);
+    
 }
 
 html {
@@ -109,41 +129,49 @@ button {
     border: none;
 }
 
-/* Display none*/
+/*
+Display none
+*/
 
 .menu {
     display: none;
 }
 
-.wrapper {
+/*
+General container
+*/
+/*
+Navigation section
+*/
+header {
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    height: var(--nav-height);
+    padding-top: 2.4rem;
+}
+
+section {
     margin-inline: 2.4rem;
 }
 
 nav {
-    width: 100vw;
-    height: var(--nav-height);
-    position: fixed;
-    top: 0;
-    z-index: 100;
-  }
-
-nav .wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 2.4rem;
+   display: flex; 
+   justify-content: space-between;
 }
+
 
 main {
     margin-top: calc(var(--nav-height) + 4.2rem);
     text-align: center;
-}
-
-main .content {
     margin-bottom: 8.1rem;
 }
 
-.explore button {
+/*
+Main section
+*/
+
+#explore button {
     background: var(--c-white-normal);
     border: 1px solid var(--c-white-normal);
     border-radius: 50%;
@@ -154,12 +182,10 @@ main .content {
     letter-spacing: 1.25px;
     text-transform: uppercase;
     color: #0B0D17;
-    
 }
 
-.explore button:hover {
+#explore button:hover {
     cursor: pointer;
     outline: 4rem solid #979797;
     border: 1px solid var(--c-white-normal);
-    
 }
