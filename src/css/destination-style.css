@@ -168,7 +168,7 @@ section {
 /*
 Header and navigation section
 */
-header {
+#nav-header  {
     width: 100vw;
     position: fixed;
     top: 0;
@@ -191,6 +191,7 @@ main {
     text-align: center;
     margin-bottom: 8.1rem;
 }
+
 
 .nav-text {
     margin-bottom: 3.2rem;
