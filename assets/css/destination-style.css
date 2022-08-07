@@ -204,6 +204,10 @@ main ul {
     margin-bottom: 2rem;
 }
 
+#destination-image img {
+    width: 170px;
+}
+
 #destination button {
     background-color: none;
     border: none;
