@@ -59,19 +59,16 @@
 		<section id="destination">	
 			<section id="destination-menu">
 				<ul>
-					<li><button id="moon">moon</button></li>
-					<li><button id="mars">mars</button></li>
-					<li><button id="europa">europa</button></li>
-					<li><button id="titan">titan</button></li>
+					<li><button id="0" onclick="getId(this.id)">moon</button></li>
+					<li><button id="1" onclick="getId(this.id)">mars</button></li>
+					<li><button id="2" onclick="getId(this.id)">europa</button></li>
+					<li><button id="3" onclick="getId(this.id)">titan</button></li>
 				</ul>
 			</section>
 
 			<section id="destination-details">
-				<!--Load by JS
-				<h3>moon</h3>
-				Load by JS
-				<p>See our planet as you’ve never seen it before. A perfect r elaxing trip away to help regain perspective and come back refreshed. 
-					While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.</p>-->
+				<h3 id="destination-name"></h3>
+				<p id="destination-description"></p>
 			</section>
 			
 			<hr>
@@ -80,14 +77,12 @@
 				
 				<section id="distance">
 					<p class="sheading-3">avg. distance</h3>
-					<!--Load by JS
-					<p class="sheading-1">384,400 km</h5>-->
+					<h5 id="destination-distance" class="sheading-1"></h5>
 				</section>
 				
 				<section id="time">
 					<p class="sheading-3">est. travel time</p>
-					<!--Load by JS
-					<p class="sheading-1">3 days</p>-->
+					<p id="destination-time" class="sheading-1"></p>
 				</section>
 			
 			</section>
