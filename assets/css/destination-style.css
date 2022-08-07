@@ -139,7 +139,7 @@ body {
 html {
     min-height: 100%;
     background-color: var(--c-blue-dark);
-    background-image: url(/src/img/bg-destination.png);
+    background-image: url(/assets/img/bg-destination.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;

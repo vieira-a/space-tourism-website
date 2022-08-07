@@ -119,7 +119,7 @@ body {
 
 html {
     min-height: 100%;
-    background-image: url(/src/img/bg-index.png);
+    background-image: url(/assets/img/bg-index.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
