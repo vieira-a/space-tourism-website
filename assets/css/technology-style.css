@@ -191,8 +191,7 @@ main ul {
 }
 
 #technology-image img {
-  width: 327px;
-  border-bottom: 1px solid var(--c-gray);
+  width: 375px;
 }
 
 #technology-menu button {
