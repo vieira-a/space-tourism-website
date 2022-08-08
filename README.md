@@ -45,7 +45,7 @@ Decidi implementar a ideia do carousel em JavaScript puro, ao invés de utilizar
 
 ### HTML
 
-- [ ] Construir templates para as páginas:
+- [x] Construir templates para as páginas:
   - [x] Crew
   - [x] Technology
 
@@ -63,9 +63,9 @@ Decidi implementar a ideia do carousel em JavaScript puro, ao invés de utilizar
 
 ### JavaScript
 
-- [ ] Criar funções para as páginas:
+- [x] Criar funções para as páginas:
   - [x] Crew
-  - [ ] Technology
+  - [x] Technology
 
 ### Organização geral
 
