@@ -12,8 +12,8 @@
 	<link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap"
 			rel="stylesheet">
 	<!-- Stylesheets -->
-	<link rel="stylesheet" href="/assets/css/destination-style.css">
-	<title>Space Tourism Website - Destination</title>
+	<link rel="stylesheet" href="/assets/css/technology-style.css">
+	<title>Space Tourism Website - Technology</title>
 </head>
 
 <body>
@@ -50,46 +50,32 @@
 	</header>
 	
 	<main>
-		<header id="destination-header">
-			<p class="nav-text">01 pick your destination</p>
-			<h1 id="destination-image"></h1>
-			<!--Load by JS
-			<h1><img src="/assets/img/destination-moon.png" alt="Moon" width="170px"></h1>-->
+		<header id="technology-header">
+			<p class="nav-text">03 Space Launch 101</p>
+			<h1 id="technology-image"></h1>			
 		</header>
-
-		<section id="destination">	
-			<section id="destination-menu">
+    
+		<section id="technology">	
+			<section id="technology-menu">
 				<ul>
-					<li><button id="0" onclick="getId(this.id)">moon</button></li>
-					<li><button id="1" onclick="getId(this.id)">mars</button></li>
-					<li><button id="2" onclick="getId(this.id)">europa</button></li>
-					<li><button id="3" onclick="getId(this.id)">titan</button></li>
+					<li><button id="0" onclick="getId(this.id)">1</button></li>
+					<li><button id="1" onclick="getId(this.id)">2</button></li>
+					<li><button id="2" onclick="getId(this.id)">3</button></li>
 				</ul>
 			</section>
 
-			<section id="destination-details">
-				<h3 id="destination-name"></h3>
-				<p id="destination-description"></p>
+			<section id="technology-details">
+        <header id="header-technology-datails">
+          <h2 id="technology-title"></h2>
+          <h1 id="technology-name"></h1>
+        </header>
+        <p id="technology-details-text">
+        </p>
 			</section>
-			
-			<hr>
-
-			<section id="data-travel">
-				
-				<section id="distance">
-					<p class="sheading-3">avg. distance</h3>
-					<h5 id="destination-distance" class="sheading-1"></h5>
-				</section>
-				
-				<section id="time">
-					<p class="sheading-3">est. travel time</p>
-					<p id="destination-time" class="sheading-1"></p>
-				</section>
 			
 			</section>
 
 		</section>
 	</main>
-	<script src="/assets/js/destination.js"></script>
 </body>
 </html>
