@@ -187,6 +187,7 @@ main ul {
 }
 
 #crew-image img {
+  width: 327px;
   border-bottom: 1px solid var(--c-gray);
 }
 

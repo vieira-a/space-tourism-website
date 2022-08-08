@@ -64,7 +64,7 @@ Decidi implementar a ideia do carousel em JavaScript puro, ao invés de utilizar
 ### JavaScript
 
 - [ ] Criar funções para as páginas:
-  - [ ] Crew
+  - [x] Crew
   - [ ] Technology
   - [ ] Modularizar os scripts: ter um script central que carrega os demais scripts. [MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Modules)
 
