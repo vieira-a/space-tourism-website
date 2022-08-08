@@ -58,7 +58,7 @@ Decidi implementar a ideia do carousel em JavaScript puro, ao invés de utilizar
 ### JSON
 
 - [ ] Criar JSON para as páginas:
-  - [ ] Crew
+  - [x] Crew
   - [ ] Technology
 
 ### JavaScript
