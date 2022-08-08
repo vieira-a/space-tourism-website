@@ -47,27 +47,27 @@ Decidi implementar a ideia do carousel em JavaScript puro, ao invés de utilizar
 
 - [ ] Construir templates para as páginas:
   - [x] Crew
-  - [ ] Technology
+  - [x] Technology
 
 ### CSS
 
-- [ ] Aplicar estilos para as páginas:
+- [x] Aplicar estilos para as páginas:
   - [x] Crew
-  - [ ] Technology
+  - [x] Technology
 
 ### JSON
 
-- [ ] Criar JSON para as páginas:
+- [x] Criar JSON para as páginas:
   - [x] Crew
-  - [ ] Technology
+  - [x] Technology
 
 ### JavaScript
 
 - [ ] Criar funções para as páginas:
   - [x] Crew
   - [ ] Technology
-  - [ ] Modularizar os scripts: ter um script central que carrega os demais scripts. [MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Modules)
 
 ### Organização geral
 
+- [ ] Modularizar os scripts: ter um script central que carrega os demais scripts. [MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Modules)
 - [ ] Modularizar os arquivos HTML e CSS para melhor organização.
