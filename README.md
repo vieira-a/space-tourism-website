@@ -46,13 +46,13 @@ Decidi implementar a ideia do carousel em JavaScript puro, ao invés de utilizar
 ### HTML
 
 - [ ] Construir templates para as páginas:
-  - [ ] Crew
+  - [x] Crew
   - [ ] Technology
 
 ### CSS
 
 - [ ] Aplicar estilos para as páginas:
-  - [ ] Crew
+  - [] Crew
   - [ ] Technology
 
 ### JSON
