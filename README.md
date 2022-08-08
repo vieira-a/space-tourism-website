@@ -51,4 +51,4 @@ Decidi implementar a ideia do carousel em JavaScript puro, ao invés de utilizar
 
 ### Organização geral
 
-- [ ] Modularizar os arquivos HTML e CSS
+- [ ] Modularizar os arquivos HTML e CSS para melhor organização.
