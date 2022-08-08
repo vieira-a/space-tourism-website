@@ -52,7 +52,7 @@ Decidi implementar a ideia do carousel em JavaScript puro, ao invés de utilizar
 ### CSS
 
 - [ ] Aplicar estilos para as páginas:
-  - [] Crew
+  - [x] Crew
   - [ ] Technology
 
 ### JSON
