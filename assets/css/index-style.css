@@ -128,14 +128,74 @@ html {
 button {
     background-color: transparent;
     border: none;
+    cursor: pointer;
+}
+
+ul li {
+    list-style: none;
 }
 
 /*
 Display none
 */
 
-#menu {
+section #menu {
+    visibility: hidden;
+}
+
+body.menu-expanded section #menu {
+    visibility: visible;
+    overflow: hidden;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-left: 32%;
+
+    background-color: rgba(255, 255, 255, 0.04);
+
+    backdrop-filter: blur(81.5485px);
+
+    width: 100vw;
+    height: 100vh;
+
+}
+
+body.menu-expanded .open-menu {
     display: none;
+}
+
+#menu {
+    display: flex;
+}
+
+#menu ul {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    font-family: var(--f-barlow-c);
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    color: var(--c-white-normal);
+    line-height: 1.92rem;
+    letter-spacing: 2.7px;
+    padding-top: 11.8rem;
+    padding-left: 3.2rem;
+}
+
+#menu ul li {
+    display: flex;
+    gap: 1.1rem;
+}
+
+.menu-buttons .close-menu, .open-menu {
+    position: fixed;
+    left: 50%;
+    padding-top: 3.2rem;
+}
+
+#menu-item {
+    font-weight: bold;
 }
 
 /*
