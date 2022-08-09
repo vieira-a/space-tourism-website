@@ -39,6 +39,8 @@ Decidi implementar a ideia do carousel em JavaScript puro, ao invés de utilizar
 
 ## TODO List
 
+### Mobile First
+
 - [x] Fazer com que o site, ao abrir, apresente as informações do primeiro elemento do array; atualmente esta vindo vazio;
 - [x] Adicionar endereço da imagem ao JSON;
 - [x] Popular o campo imagem dinamicamente no HTML.
@@ -66,6 +68,44 @@ Decidi implementar a ideia do carousel em JavaScript puro, ao invés de utilizar
 - [x] Criar funções para as páginas:
   - [x] Crew
   - [x] Technology
+
+
+### Tablet layout
+
+### HTML
+
+- [ ] Construir templates para as páginas:
+  - [ ] Index
+  - [ ] Destination 
+  - [ ] Crew
+  - [ ] Technology
+
+### CSS
+
+- [ ] Aplicar estilos para as páginas:
+  - [ ] Index
+  - [ ] Destination 
+  - [ ] Crew
+  - [ ] Technology
+
+### Desktop layout
+
+### HTML
+
+- [ ] Construir templates para as páginas:
+  - [ ] Index
+  - [ ] Destination 
+  - [ ] Crew
+  - [ ] Technology
+
+### CSS
+
+- [ ] Aplicar estilos para as páginas:
+  - [ ] Index
+  - [ ] Destination 
+  - [ ] Crew
+  - [ ] Technology
+
 
 ### Organização geral
 
