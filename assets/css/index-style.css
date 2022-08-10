@@ -6,6 +6,7 @@ Reset
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 :root {
@@ -290,12 +291,92 @@ main {
 }
 
 @media (min-width: 768px) {
-    header {
-        width: 100vw;
-        position: fixed;
-        top: 0;
-        height: var(--nav-height-tablet);
-        padding-top: 2.4rem;
+    * root {
+        margin: initial;
+        padding: initial;
+        visibility: initial;
+        display: initial;
+        opacity: initial;
+        flex-direction: initial;
+        justify-content: initial;
+        justify-items: initial;
+        text-align: initial;
+        position: initial;
+        font-size: initial;
+        font-weight: initial;
+        transform: initial;
+        color: initial;
+        background-color: initial;
+        filter: initial;
+      }
+
+      .menu-buttons, 
+      #menu-item {
+        display: none;
     }
 
+    h1 {
+        font-size: 15rem;
+        line-height: 15rem;
+    }
+
+    .nav-text {
+        font-size: 2rem;
+        line-height: 2.4rem;
+        letter-spacing: 3.38px;
+    }
+
+
+    #menu ul {
+        display: flex;
+        flex-direction: row;
+        gap: 3.7rem;
+        
+        padding: 0;
+        
+    }
+
+    section #menu {
+        height: var(--nav-height-tablet);
+        visibility: visible;
+        
+        padding-inline: 4.8rem;
+        
+        padding-block: 4rem;
+
+        background: rgba(255, 255, 255, 0.04);
+        backdrop-filter: blur(81.5485px);
+    }
+
+    header {
+        height: var(--nav-height-tablet);
+        margin-bottom: 10.6rem;
+    }
+
+    #navigation {
+        margin-left: 3.9rem;
+    }
+
+    .logo svg {
+        width: 4.8rem;
+        height: 4.8rem;
+    }
+
+    main {
+        margin-top: calc(var(--nav-height-tablet) + 10.6rem );
+        margin-bottom: 15.6rem;
+        margin-inline: 15.9rem;
+    }
+
+    #explore button {
+        width: 24.2rem;
+        height: 24.2rem;
+    }
+
+    #explore button:hover {
+        cursor: pointer;
+        outline: 64rem solid #979797;
+        border: 1px solid var(--c-white-normal);
+        transition: all .5s ease-in-out;
+    }
 }
