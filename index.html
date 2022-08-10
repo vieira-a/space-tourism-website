@@ -20,7 +20,7 @@
 	
 	<header>
 		<section id="navigation">
-			<nav>	
+			<nav id="navbar">	
 				<a href="index.html" class="logo">
 									<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
 											<circle cx="20" cy="20" r="20" fill="white" />
@@ -50,26 +50,25 @@
 							</li></a>
 						</ul>
 					</div>
-					<div class="menu-buttons">
-						<button class="open-menu" onclick="openMobileMenu()">
-							<svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<rect width="24" height="3" fill="#D0D6F9" />
-									<rect y="9" width="24" height="3" fill="#D0D6F9" />
-									<rect y="18" width="24" height="3" fill="#D0D6F9" />
-							</svg>
-			
-						</button>
-						<button class="close-menu" onclick="closeMobileMenu()">
-							<svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<g id="Group">
-								<rect id="Rectangle Copy" x="2.5752" y="0.954102" width="24" height="3" transform="rotate(45 2.5752 0.954102)" fill="#D0D6F9"/>
-								<rect id="Rectangle Copy 3" x="0.454102" y="17.9246" width="24" height="3" transform="rotate(-45 0.454102 17.9246)" fill="#D0D6F9"/>
-								</g>
-								</svg>
-						</button>
-					</div>
-
 				</section>
+				<div class="menu-buttons">
+					<button class="open-menu" onclick="openMobileMenu()">
+						<svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<rect width="24" height="3" fill="#D0D6F9" />
+								<rect y="9" width="24" height="3" fill="#D0D6F9" />
+								<rect y="18" width="24" height="3" fill="#D0D6F9" />
+						</svg>
+		
+					</button>
+					<button class="close-menu" onclick="closeMobileMenu()">
+						<svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<g id="Group">
+							<rect id="Rectangle Copy" x="2.5752" y="0.954102" width="24" height="3" transform="rotate(45 2.5752 0.954102)" fill="#D0D6F9"/>
+							<rect id="Rectangle Copy 3" x="0.454102" y="17.9246" width="24" height="3" transform="rotate(-45 0.454102 17.9246)" fill="#D0D6F9"/>
+							</g>
+							</svg>
+					</button>
+				</div>
 			</nav>		
 		</section>
 	</header>
@@ -81,7 +80,7 @@
 			<p>Let’s face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. Well sit back, and relax because we’ll give you a truly out of thisworld experience!</p>
 		</section>
 		<section id="explore">
-			<button>explore</button>
+			<a href="destination.html"><button>explore</button></a>
 		</section>
 	</main>
 	<script src="/assets/js/main.js"></script>

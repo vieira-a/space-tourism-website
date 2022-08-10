@@ -28,7 +28,8 @@ Reset
     --c-blue-light: hsl(231, 77%, 90%);
     --c-white-normal: hsl(0, 0%, 100%);
 
-    --nav-height: 7rem;
+    --nav-height-mobile: 8.8rem;
+    --nav-height-tablet: 9.6rem;
 
     font-size: 62.5%;
 
@@ -153,14 +154,16 @@ button {
 /*
 Display none
 */
+.close-menu {
+    visibility: hidden;
+}
 
 section #menu {
     visibility: hidden;
     overflow: hidden;
     
-    position: fixed;
+    position: absolute;
     top: 0;
-    left: 0;
     margin-left: 32%;
 
     background-color: rgba(255, 255, 255, 0.04);
@@ -177,7 +180,6 @@ section #menu {
 body.menu-expanded section #menu {
     visibility: visible;
     overflow: hidden;
-    position: absolute;
     
     background-color: rgba(255, 255, 255, 0.04);
     backdrop-filter: blur(81.5485px);
@@ -187,8 +189,6 @@ body.menu-expanded section #menu {
 }
 
 body.menu-expanded #menu ul {
-    position: absolute;
-    
     height: 100vh;
     width: 100vw;
     transition: all .5s ease-in-out;
@@ -197,11 +197,12 @@ body.menu-expanded #menu ul {
 }
 
 body.menu-expanded .open-menu {
-    display: none;
+    visibility: hidden;
 }
 
-#menu {
-    display: flex;
+body.menu-expanded .close-menu {
+    visibility: visible;
+    
 }
 
 #menu ul {
@@ -223,10 +224,14 @@ ul li a {
     gap: 1.1rem;
 }
 
+.menu-buttons {
+    display: flex;
+    align-items: center;
+}
+
 .menu-buttons .close-menu, .open-menu {
-    position: fixed;
-    left: 50%;
-    margin-top: 3.2rem;
+    position: absolute;
+    right: 2.4rem;
 }
 
 #menu-item {
@@ -243,44 +248,47 @@ section {
 /*
 Header and navigation section
 */
+
 header  {
     width: 100vw;
     position: fixed;
     top: 0;
-    height: var(--nav-height);
-    padding-top: 2.4rem;
+  }
+
+#navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: var(--nav-height-mobile);
 }
 
-
-nav {
-   display: flex; 
-   justify-content: space-between;
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-
 /*
 Main section
 */
 
 main {
-    margin-top: calc(var(--nav-height) + 4.2rem);
+    margin-top: calc(var(--nav-height-mobile) + 4.2rem);
     text-align: center;
     margin-bottom: 8.1rem;
 }
-
 
 .nav-text {
     margin-bottom: 3.2rem;
 }
 
-main ul {
+#destination-image img {
+    width: 170px;
+}
+
+#destination-menu ul {
     display: flex;
     gap: 2.6rem;
     justify-content: center;
-    margin-bottom: 2rem;
-}
-
-#destination-image img {
-    width: 170px;
 }
 
 #destination button {
@@ -296,6 +304,10 @@ main ul {
 
 #destination button:hover {
     cursor: pointer;
+}
+
+#destination-details {
+    margin-top: 2rem;
 }
 
 hr {

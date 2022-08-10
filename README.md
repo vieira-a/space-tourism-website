@@ -72,7 +72,7 @@ Decidi implementar a ideia do carousel em JavaScript puro, ao invés de utilizar
 - [x] Criar funções para as páginas:
   - [x] Crew
   - [x] Technology
-- [ ] Criar funções para abertura e fechamento do menu mobile
+- [x] Criar funções para abertura e fechamento do menu mobile
 
 ### Tablet layout
 
