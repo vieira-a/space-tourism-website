@@ -150,17 +150,23 @@ section #menu {
 body.menu-expanded section #menu {
   visibility: visible;
   overflow: hidden;
+  position: absolute;
   
-  position: fixed;
-  top: 0;
-  left: 0;
-  margin-left: 32%;
-
   background-color: rgba(255, 255, 255, 0.04);
   backdrop-filter: blur(81.5485px);
 
   width: 100vw;
   height: 100vh;
+}
+
+body.menu-expanded #menu ul {
+  position: absolute;
+  
+  height: 100vh;
+  width: 100vw;
+  transition: all .5s ease-in-out;
+  margin-left: 16px;
+  transform: translateX(100);
 }
 
 body.menu-expanded .open-menu {
