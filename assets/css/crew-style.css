@@ -511,22 +511,22 @@ main ul {
       height: 4.8rem;
   }
 
-
   #crew {
     display: grid;
     grid-template-areas: 
     "A D"
     "B D"
     "C D";
+    margin-left: 16.65rem;
   }
 
   #crew-header {
     grid-area: A;
   }
 
-
   #crew-details {
     grid-area: B;
+    margin: 0;
   }
   
   #crew-menu {
@@ -541,6 +541,15 @@ main ul {
     margin: 0;
   }
 
+  #crew-image img {
+    width: 570px;
+    margin-left: 8.1rem;
+    margin-right: 13.7rem;
+  }
+
+  #crew-menu ul {
+    justify-content: left;
+  }
 
   main {
     margin-top: calc(var(--nav-height-desktop) + 3.6rem);
