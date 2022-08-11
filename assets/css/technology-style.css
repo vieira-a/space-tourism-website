@@ -6,6 +6,7 @@ Reset
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 :root {
@@ -31,6 +32,7 @@ Reset
 
   --nav-height-mobile: 8.8rem;
   --nav-height-tablet: 9.6rem;
+  --nav-height-desktop: 17.6rem;
 
   font-size: 62.5%;
 
@@ -47,9 +49,6 @@ h1 {
   font-weight: 400;
   text-transform: uppercase; 
   color: var(--c-white-normal);
-}
-
-h1 {
   font-size: 2.4rem;
   line-height: 2.75rem;
 }
@@ -83,7 +82,6 @@ a {
   color: inherit;
 }
 
-
 .nav-text {
   font-family: var(--f-barlow-c);
   font-size: 1.6rem;
@@ -103,7 +101,6 @@ body {
   font-size: 1.5rem;    
   line-height: 2.5rem;
   color: var(--c-blue-light);
-  
 }
 
 html {
@@ -118,14 +115,16 @@ html {
 button {
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 
 /*
 Display none
 */
 
-.close-menu {
+.close-menu, #navbar hr {
   visibility: hidden;
+  position: absolute;
 }
 
 section #menu {
@@ -167,13 +166,9 @@ body.menu-expanded .open-menu {
 
 body.menu-expanded .close-menu {
   visibility: visible;
-  
 }
 
 #menu ul {
-  display: flex;
-  flex-direction: column;
-  gap: 3.2rem;
   font-family: var(--f-barlow-c);
   font-size: 1.6rem;
   text-transform: uppercase;
@@ -187,12 +182,12 @@ body.menu-expanded .close-menu {
 ul li a {
   display: flex;
   gap: 1.1rem;
+  margin-bottom: 3.2rem;
 }
 
 .menu-buttons {
   display: flex;
   align-items: center;
-
 }
 
 .menu-buttons .close-menu, .open-menu {
@@ -207,9 +202,6 @@ ul li a {
 /*
 General container
 */
-section {
-  margin-inline: 2.4rem;
-}
 
 /*
 Header and navigation section
@@ -226,6 +218,7 @@ header  {
   flex-direction: column;
   justify-content: center;
   height: var(--nav-height-mobile);
+  margin-inline: 2.4rem;
 }
 
 #navbar {
@@ -255,24 +248,24 @@ main ul {
   margin-bottom: 2rem;
 }
 
+#technology {
+  margin-inline: 0;
+}
+
 #header-technology-datails {
   display: flex;
   flex-direction: column;
-  gap: 0.8rem;
+  gap: 0.9rem;
   margin-bottom: 1.6rem;
 }
 
 #technology-menu {
-  margin-top: 3.2rem;
+  margin-top: 3.4rem;
+  margin-bottom: 2.6rem;
 }
 
-#technology-header {
-  margin: 0;
-  width: 100vw; 
-}
-
-#technology-header img {
-  width: 100vw;
+#technology-image img {
+  width: 100%;
 }
 
 #technology-menu button {
@@ -291,4 +284,8 @@ main ul {
   background-color: var(--c-white-normal);
   opacity: 1;
   color: var(--c-blue-dark);
+}
+
+#technology-details {
+  margin-inline: 2.4rem;
 }
