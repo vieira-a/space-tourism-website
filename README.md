@@ -80,7 +80,7 @@ Decidi implementar a ideia do carousel em JavaScript puro, ao invés de utilizar
 
 - [ ] Construir templates para as páginas:
   - [x] Index
-  - [ ] Destination 
+  - [x] Destination 
   - [ ] Crew
   - [ ] Technology
 
@@ -88,7 +88,7 @@ Decidi implementar a ideia do carousel em JavaScript puro, ao invés de utilizar
 
 - [ ] Aplicar estilos para as páginas:
   - [x] Index
-  - [ ] Destination 
+  - [x] Destination 
   - [ ] Crew
   - [ ] Technology
 
@@ -97,16 +97,16 @@ Decidi implementar a ideia do carousel em JavaScript puro, ao invés de utilizar
 ### HTML
 
 - [ ] Construir templates para as páginas:
-  - [ ] Index
-  - [ ] Destination 
+  - [x] Index
+  - [x] Destination 
   - [ ] Crew
   - [ ] Technology
 
 ### CSS
 
 - [ ] Aplicar estilos para as páginas:
-  - [ ] Index
-  - [ ] Destination 
+  - [x] Index
+  - [x] Destination 
   - [ ] Crew
   - [ ] Technology
 

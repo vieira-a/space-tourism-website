@@ -131,11 +131,8 @@ Display none
 section #menu {
   visibility: hidden;
   overflow: hidden;
-  
-  position: absolute;
   top: 0;
-  margin-left: 32%;
-
+  
   background-color: rgba(255, 255, 255, 0.04);
   backdrop-filter: blur(81.5485px);
 
@@ -144,6 +141,8 @@ section #menu {
 }
 
 body.menu-expanded section #menu {
+  position: absolute;
+  margin-left: 32%;
   visibility: visible;
   overflow: hidden;
   
