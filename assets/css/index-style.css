@@ -36,7 +36,6 @@ Reset
     --bg-html: url(/assets/img/bg-index.png);
 
     font-size: 62.5%;
-
 }
 
 /* 
@@ -155,10 +154,8 @@ section #menu {
     visibility: hidden;
     overflow: hidden;
     top: 0;
-    
     background-color: rgba(255, 255, 255, 0.04);
     backdrop-filter: blur(81.5485px);
-
     width: 100vw;
     height: 100vh;
 }
@@ -168,10 +165,8 @@ body.menu-expanded section #menu {
     margin-left: 32%;
     visibility: visible;
     overflow: hidden;
-    
     background-color: rgba(255, 255, 255, 0.04);
     backdrop-filter: blur(81.5485px);
-
     width: 100vw;
     height: 100vh;
 }
@@ -336,10 +331,12 @@ main {
         margin-inline: auto;
         
     }
+
     section #menu .menu-itens ul {
         display: flex;
         gap: 1.5rem;
     }
+
     section #menu .menu-itens ul li a {
         display: inline;
     }
@@ -449,11 +446,13 @@ main {
         margin-inline: auto;
         
     }
+
     section #menu .menu-itens ul {
         display: flex;
         gap: 3.7rem;
         
     }
+    
     section #menu .menu-itens ul li a {
         display: inline;
     }
