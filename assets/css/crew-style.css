@@ -325,6 +325,10 @@ main ul {
       background: rgba(255, 255, 255, 0.04);
       backdrop-filter: blur(1px); 
   }
+
+  section {
+    margin-inline: 0;
+  }
   
   section #menu .menu-itens {
       margin-inline: auto;
@@ -362,15 +366,185 @@ main ul {
   }
 
   #crew {
-    display: flex;
-    flex-direction: column-reverse;
+    display: grid;
+    grid-template-areas: 
+    "A"
+    "B"
+    "C"
+    "D";
+    margin-top: calc(var(--nav-height-tablet) + 4rem);
+  }
+
+  #crew-header {
+    grid-area: A;
+    margin-bottom: 6rem;
+  }
+
+  #crew-details {
+    grid-area: B;
     margin-inline: 15.5rem;
-    margin-top: 6rem;
+  }
+
+  #crew-menu {
+    grid-area: C;
+  }
+
+  #crew-image {
+    grid-area: D;
   }
 
   #crew-image img {
-    width: 100%;
+    width: 450px;
     border: none;
+  }
+
+  #crew-header {
+    margin-left: 3.85rem;
+  }
+
+}
+
+@media (min-width: 1440px) {
+  header * {
+      height: initial;
+      width: initial;
+      margin: 0;
+      padding: 0;
+      visibility: initial;
+      display: initial;
+      opacity: initial;
+      flex-direction: initial;
+      position: initial;
+      font-size: initial;
+      font-weight: initial;
+      transform: initial;
+      color: inherit;
+      background-color: initial;
+      filter: initial;
+    }
+
+    header,
+    #navigation, #navbar {
+      height: var(--nav-height-desktop);
+    }
+
+    header {
+      padding-left: 5.5rem;
+    }
+
+    #navbar hr {
+      visibility: visible;
+      border: none;
+      height: 1px;
+      background-color: var(--c-white-normal);
+      width: 47.3rem;
+      position: absolute;
+      opacity: .5;
+      margin-left: 11.2rem;
+    }
+
+    h1 {
+      font-size: 5.6rem;
+      line-height: 6.5rem;
+    }
+
+    h2 {
+      font-size: 3.2rem;
+      line-height: 3.7rem;
+    }
+  
+  .nav-text {
+      font-size: 2.8rem;
+      line-height: 3.4rem;
+      letter-spacing: 4.72px;
+  }
+
+  #navbar .logo {
+      display: flex;
+      align-items: center;
+      margin-top: 0;
+      margin-right: 50.7rem;
+
+  }
+
+  section {
+    margin-inline: 0;
+    padding: 0;
+  }
+
+  section #menu {
+      visibility: visible;
+      height: var(--nav-height-tablet);
+      background: rgba(255, 255, 255, 0.04);
+      backdrop-filter: blur(81.5485px);
+  }
+  
+  section #menu .menu-itens {
+      margin-inline: auto;
+      
+  }
+  section #menu .menu-itens ul {
+      display: flex;
+      gap: 3.7rem;
+      
+  }
+  section #menu .menu-itens ul li a {
+      display: inline;
+  }
+  
+  section #menu .menu-itens ul li p {
+      font-size: 1.6rem;
+      line-height: 19.2px;
+      letter-spacing: 2.7px;
+  }
+
+  #menu-item {
+      visibility: visible;
+  }
+
+  #menu ul {
+      padding: 0;
+  }
+
+  .logo svg {
+      width: 4.8rem;
+      height: 4.8rem;
+  }
+
+
+  #crew {
+    display: grid;
+    grid-template-areas: 
+    "A D"
+    "B D"
+    "C D";
+  }
+
+  #crew-header {
+    grid-area: A;
+  }
+
+
+  #crew-details {
+    grid-area: B;
+  }
+  
+  #crew-menu {
+    grid-area: C;
+  }
+
+  #crew-image {
+    grid-area: D;
+  }
+
+  section #crew-header {
+    margin: 0;
+  }
+
+
+  main {
+    margin-top: calc(var(--nav-height-desktop) + 3.6rem);
+    text-align: left;
   }
 
 }
