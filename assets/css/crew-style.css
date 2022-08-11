@@ -6,6 +6,7 @@ Reset
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 :root {
@@ -31,6 +32,7 @@ Reset
 
   --nav-height-mobile: 8.8rem;
   --nav-height-tablet: 9.6rem;
+  --nav-height-desktop: 17.6rem;
 
   font-size: 62.5%;
 
@@ -76,8 +78,6 @@ ul {
 }
 
 a {
-  font-family: inherit;
-  font-size: inherit;
   text-decoration: none;
   color: inherit;
 }
@@ -120,16 +120,13 @@ button {
   cursor: pointer;
 }
 
-ul li {
-  list-style: none;
-}
-
 /*
 Display none
 */
 
-.close-menu {
+.close-menu, #navbar hr {
   visibility: hidden;
+  position: absolute;
 }
 
 section #menu {
@@ -171,13 +168,9 @@ body.menu-expanded .open-menu {
 
 body.menu-expanded .close-menu {
   visibility: visible;
-  
 }
 
 #menu ul {
-  display: flex;
-  flex-direction: column;
-  gap: 3.2rem;
   font-family: var(--f-barlow-c);
   font-size: 1.6rem;
   text-transform: uppercase;
@@ -191,12 +184,12 @@ body.menu-expanded .close-menu {
 ul li a {
   display: flex;
   gap: 1.1rem;
+  margin-bottom: 3.2rem;
 }
 
-menu-buttons {
+.menu-buttons {
   display: flex;
   align-items: center;
-
 }
 
 .menu-buttons .close-menu, .open-menu {
@@ -270,7 +263,7 @@ main ul {
 }
 
 #crew-image img {
-  width: 327px;
+  width: 177px;
   border-bottom: 1px solid var(--c-gray);
 }
 
@@ -284,4 +277,100 @@ main ul {
 #crew-menu button:hover {
   cursor: pointer;
   background-color: var(--c-white-normal);
+}
+
+@media (min-width: 768px) {
+  header * {
+      height: initial;
+      width: initial;
+      margin: 0;
+      padding: 0;
+      visibility: initial;
+      display: initial;
+      opacity: initial;
+      flex-direction: initial;
+      position: initial;
+      font-size: initial;
+      font-weight: initial;
+      transform: initial;
+      color: inherit;
+      background-color: initial;
+      filter: initial;
+    }
+  
+  h1 {
+      font-size: 4rem;
+      line-height: 4.6rem;
+  }
+  
+  .nav-text {
+      font-size: 2rem;
+      line-height: 2.4rem;
+      letter-spacing: 3.38px;
+      text-align: left;
+      margin-bottom: 0;
+  }
+
+  #navbar .logo {
+      margin-top: 2.4rem;
+      margin-left: 3.9rem;
+      margin-right: 23.1rem;
+  }
+
+  section #menu {
+      visibility: visible;
+      display: flex;
+      align-items: center;
+      height: var(--nav-height-tablet);
+      background: rgba(255, 255, 255, 0.04);
+      backdrop-filter: blur(1px); 
+  }
+  
+  section #menu .menu-itens {
+      margin-inline: auto;
+      
+  }
+  section #menu .menu-itens ul {
+      display: flex;
+      gap: 1.5rem;
+  }
+  section #menu .menu-itens ul li a {
+      display: inline;
+  }
+  
+  section #menu .menu-itens ul li p {
+      font-size: 1.4rem;
+      line-height: 16.8px;
+      letter-spacing: 2.36px;
+  }
+
+  #menu-item, #navbar hr {
+      visibility: hidden;
+  }
+
+  #menu ul {
+      padding: 0;
+  }
+
+  .logo svg {
+      width: 4.8rem;
+      height: 4.8rem;
+  }
+
+  main {
+    margin-bottom: 0;
+  }
+
+  #crew {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-inline: 15.5rem;
+    margin-top: 6rem;
+  }
+
+  #crew-image img {
+    width: 100%;
+    border: none;
+  }
+
 }
